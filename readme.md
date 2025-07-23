@@ -1,4 +1,4 @@
-\# Football Pivot — Premier League 2024/25
+# Football Pivot — Premier League 2024/25
 
 
 
@@ -19,24 +19,20 @@ Celem jest odtworzenie i wizualizacja zależności między
 
 
 | Folder / plik | Zawartość | Jak użyć |
-
-|---------------|-----------|---------|
-
-| `data/raw/` | oryginalny CSV | zostaw bez zmian |
-
-| `data/clean/` | `e02024-2025clean.csv` (po PQ) | źródło do BULK INSERT |
-
-| `etl/01\_clean\_E0\_2024.m` | kod Power Query | wklej w Excel/Power BI ➜ Puste zapytanie |
-
-| `sql/\*.sql` | skrypty CREATE / BULK / KPI | uruchom w SSMS lub sqlcmd |
-
-| `excel/e02024-2025pivot.xlsx` | pivot + formatowanie | UI demo |
-
-| `screenshots/\*.png` | podglądy wyników | używane poniżej |
+|---------------|-----------|----------|
+| `data/raw/`   | oryginalny CSV | zostaw bez zmian |
+| `data/clean/` | `E0_2024_clean.csv` (po PQ) | źródło do BULK INSERT |
+| `etl/01_clean_E0_2024.m` | kod Power Query | wklej w Excel/Power BI ➜ Puste zapytanie |
+| `sql/*.sql`   | skrypty CREATE / BULK / KPI | uruchom w SSMS lub sqlcmd |
+| `excel/PremierLeague_2024_Pivot.xlsx` | pivot + formatowanie | UI demo |
+| `screenshots/*.png` | podglądy wyników (poniżej) | – |
 
 
+### Pivot w Excelu
+![Pivot](screenshots/pivot-table.png)
 
----
+### T-SQL outliers
+![Outliers](screenshots/sql%20kpi%20and%20outliers.png)
 
 
 
@@ -45,20 +41,6 @@ Celem jest odtworzenie i wizualizacja zależności między
 
 
 ```sql
-
--- 1) struktura
-
 :r sql/createtable.sql
-
-
-
--- 2) import danych
-
 :r sql/bulk insert.sql
-
-
-
--- 3) KPI + outliers
-
 :r sql/kpi and outliers.sql
-
