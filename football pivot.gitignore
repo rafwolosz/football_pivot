@@ -1,0 +1,13 @@
+# systemowe
+Thumbs.db
+.DS_Store
+
+# pliki tymczasowe
+*.tmp
+*.log
+
+# surowe duże dane
+/data/raw/*
+
+# ustawienia IDE
+.vscode/
