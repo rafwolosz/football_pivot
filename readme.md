@@ -2,11 +2,11 @@
 
 
 
-End-to-end mini-pipeline: \*\*Power Query → Excel → SQL\*\*.  
+End-to-end mini-pipeline: **Power Query → Excel → SQL**.  
 
 Celem jest odtworzenie i wizualizacja zależności między  
 
-\*Goal Difference\* a % zwycięstw u siebie (r ≈ 0,96) oraz szybkie wskazanie odstępstw \*(outliers)\*.
+*Goal Difference* a % zwycięstw u siebie (r ≈ 0,96) oraz szybkie wskazanie odstępstw *(outliers)*.
 
 
 
@@ -14,7 +14,7 @@ Celem jest odtworzenie i wizualizacja zależności między
 
 
 
-\## 📁 Struktura repo
+## 📁 Struktura repo
 
 
 
@@ -40,7 +40,7 @@ Celem jest odtworzenie i wizualizacja zależności między
 
 
 
-\## 🚀 Szybki start (SQL Server)
+## 🚀 Szybki start (SQL Server)
 
 
 
